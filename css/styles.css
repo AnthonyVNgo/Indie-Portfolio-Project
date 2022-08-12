@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.nav-ul {
+  list-style-type: none;
+}
+
+.nav-ul li {
+  display: inline;
+  font-size: 0.75rem;
+  padding: 10px 5px;
+  text-transform: uppercase;
+}
