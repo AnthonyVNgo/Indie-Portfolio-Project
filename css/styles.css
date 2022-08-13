@@ -13,3 +13,17 @@ body {
   padding: 10px 5px;
   text-transform: uppercase;
 }
+
+.a-button {
+  padding: 1rem;
+  border: white solid 1px;
+  transition: ease-in;
+  transition-duration: 250ms;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.a-button:hover {
+  background-color: white;
+  color: black;
+}

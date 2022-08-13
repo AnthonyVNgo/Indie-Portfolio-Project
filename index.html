@@ -9,69 +9,155 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
-</head> -->
-<!-- <body>
-  <header>
-    <nav class="flex justify-center py-5 sticky top-0 z-10">
-      <ul class="nav-ul">
-        <li>Overview</li>
-        <li>Nowww</li>
-        <li>Happy Here</li>
-        <li>Wordpress</li>
-        <li>Q+A</li>
-        <li>Connect</li>
+</head>
+<body>
+  <header class="sticky top-0 z-10 bg-black">
+    <nav class="flex justify-center py-5">
+      <ul class="nav-ul font-mono hidden sm:block">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#nowww">Nowww</a></li>
+        <li><a href="#happyhere">Happy Here</a></li>
+        <li><a href="#wordpress">Wordpress</a></li>
+        <li><a href="#qa">Q+A</a></li>
+        <li><a href="#connect">Connect</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="h-screen flex justify-center items-center">
-      <p class="text-5xl font-semibold w-8/12 h-fit ">Anthony is a software engineer based in Los Angeles, California. He utilizes technology to produce solutions for
-        organizations, individuals, and businesses of all shapes and sizes</p>
-    </section>
-    <section class="h-screen grid grid-cols-2 gap-1">
-      <div class="col-span-1 flex justify-center items-center">
-        <div class="w-9/12">
-          <h1 class="text-5xl">Nowww</h1>
-          <h2 class="my-3">Built with PostgreSQL, Express, React, Node, &#38; Bootstrap</h2>
-          <p">A full stack JavaScript application for professionals who want to share brief written descriptions of their current
-          projects (Nowwws)</p>
-            <button
-              class="bg-transparent hover:bg-white font-semibold hover:text-black py-2 px-4 border border-white-500 hover:border-white transition ease-in-out mt-5">
-              Check Out The Nowww App
-            </button>
+    <section id="overview" class="h-screen flex justify-center items-center">
+      <div class="w-8/12 -mt-20">
+        <p class="text-2xl sm:text-5xl font-bold">Anthony is a software engineer based in Los Angeles, California. He
+          utilizes technology to produce solutions for
+          organizations, individuals, and businesses of all shapes and sizes</p>
+        <div class="mt-10">
+          <span>GH Icon</span>
+          <span>Linkedin Icon</span>
         </div>
       </div>
-      <div class="col-span-1 bg-red-50">
+    </section>
 
+
+    <section id="nowww" class="h-screen grid grid-cols-3 gap-1">
+      <div class="col-span-1 flex justify-center items-center">
+        <div class="pl-32">
+          <h1 class="text-5xl font-bold">Nowww</h1>
+          <h2 class="my-3 text-sm font-mono">Built with PostgreSQL, Express, React, Node, &#38; Bootstrap</h2>
+          <p>
+            A full stack JavaScript application for professionals who want to share brief written descriptions of their current
+            projects (Nowwws)
+          </p>
+          <a class="a-button" target="_blank" href="https://nowww-app.herokuapp.com/#sign-in">View the Nowww App</a>
+        </div>
+      </div>
+      <div class="col-span-2 flex justify-center items-center">
+        <div class="w-9/12 bg-red-50 h-5/6">
+        </div>
       </div>
     </section>
-    <section class="h-screen">
 
+
+    <section id="happyhere" class="h-screen grid grid-cols-3 gap-1">
+      <div class="col-span-2 flex justify-center items-center">
+        <div class="w-9/12 bg-red-50 h-5/6">
+        </div>
+      </div>
+      <div class="col-span-1 flex items-center">
+        <div class="pr-32">
+          <h1 class="text-5xl font-bold">Happy Here</h1>
+          <h2 class="my-3 text-sm font-mono">Built with HTML, CSS, JavaScript, &#38; AJAX</h2>
+          <p>
+            A dynamic HTML, CSS, and JavaScript web application for professionals who want to relocate to urban areas
+          </p>
+          <a class="a-button" target="_blank" href="https://anthonyvngo.github.io/Happy-Here/">View Happy Here</a>
+        </div>
     </section>
-    <section class="h-screen" >
 
+
+    <section id="wordpress" class="h-screen grid grid-cols-3 gap-1">
+      <div class="col-span-1 flex justify-center items-center">
+        <div class="pl-32">
+          <h1 class="text-5xl font-bold">Wordpress X Freelance</h1>
+          <h2 class="my-3 text-sm font-mono">Built with Wordpress</h2>
+          <p>
+            Websites built with the popular Wordpress CMS
+          </p>
+          <a class="a-button" target="_blank" href="https://blankstudiola.com/">View My Most Recent Wordpress Project</a>
+        </div>
+      </div>
+      <div class="col-span-2 flex justify-center items-center">
+        <div class="w-9/12 bg-red-50 h-5/6">
+        </div>
+      </div>
     </section>
-    <section class="h-screen">
 
+
+    <section id="qa" class="h-screen flex items-center">
+      <div class="px-5 sm:px-32">
+        <h1 class="text-5xl font-bold">Q+A</h1>
+        <p class="my-5 font-mono text-sm">Looking for answers? Here are some big picture questions and answers:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-4 sm:gap-10">
+          <div class="col-span-1">
+            <h6 class="font-bold mb-3">WHAT TOOLS AND TECHNOLOGIES DO YOU USE?</h6>
+            <p>I have a firm grasp on HTML, CSS, and JavaScript.
+              <br>
+              <br>
+              I'm also experienced with PostgreSQL, Express, React, and Node (PERN stack), along with tools such as Bootstrap, Tailwind CSS, Git, GitHub, npm, Webpack, Babel, DbDesigner VSCode, ESLint, Slack, Basecamp, Figma, Adobe Lightroom, Adobe Illustrator, and the list continues to grow.
+            </p>
+          </div>
+          <div class="col-span-1">
+            <h6 class="font-bold mb-3">WHY DID YOU BECOME A SOFTWARE ENGINEER?</h6>
+            <p>
+              Becoming a software engineer has allowed me to combine some of my favorite things. I get to express my creativity through working on the front-end, exercise my critical thinking and background in philosophy through developing code logic and solving algorithms, and in subtle ways contribute towards philanthropy by providing technical solutions to some of the world's problems.
+            </p>
+          </div>
+          <div class="col-span-1">
+            <h6 class="font-bold mb-3">WHERE DO YOU SEE YOURSELF IN THE NEXT FEW YEARS?</h6>
+            <p>
+              The future is unpredictable, but I wouldn't mind contributing towards the goals of a large company or working with a small team in a startup environment. I do plan to continue my education in the field and to utilize my skills to aid the less fortunate in some way shape or form. Feel free to connect with me if you have any interesting projects.
+            </p>
+          </div>
+          <div class="col-span-1">
+            <h6 class="font-bold mb-3">WHO ARE YOU OUTSIDE OF THIS TECH BUBBLE?</h6>
+            <p>When I'm not behind a screen coding, you can find me exploring the outdoors, rolling at a Brazilian Jiu Jitsu school, or dancing Salsa.</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="h-screen">
 
+
+    <section id="connect" class="h-screen flex items-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-1">
+        <div class="col-span-1 flex justify-center">
+          <div class="w-9/12">
+            <button
+              class="text-2xl w-full p-7 mb-10 bg-transparent hover:bg-white font-semibold hover:text-black border border-white-500 hover:border-white transition ease-in-out ">
+              Anthonyvngo@info.com
+            </button>
+            <p>
+              The email address above is the quickest and easiest way to reach me.
+              <br><br>
+              You might find these other links useful. Feel free to connect with me on LinkedIn.
+              My blog also contains things about type, runnning, and photos. On github I try to update a few
+              repositories somewhat regularly.
+            </p>
+          </div>
+        </div>
+        <div class="col-span-1 flex justify-center">
+          <div class="w-9/12">
+            <ul>
+              <li class="font-bold mb-3">SOCIAL</li>
+              <li>LinkedIn</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="h-screen">
-
-    </section>
-
-
-
-
-
-
-
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
-</body> -->
-<!-- </html> -->
+</body>
+</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
