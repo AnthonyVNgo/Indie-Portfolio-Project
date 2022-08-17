@@ -1,7 +1,7 @@
 {
   "root": true,
   "env": {
-    "node": false,
+    "node": true,
     "browser": true
   },
   "parserOptions": {
@@ -42,7 +42,15 @@
         "named": "never",
         "asyncArrow": "always"
       }
-    ]
+    ],
+    "css.lint.unknownAtRules": "off"
+    // "at-rule-no-unknown":"off",
+    // "scss/at-rule-no-unknown": [
+    //   "off",
+    //     {
+    //       "ignoreAtRules": ["tailwind"]
+    //     }
+    // ]
   },
   "overrides": [
     {

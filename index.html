@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,38 +9,67 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/011024de61.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="sticky top-0 z-10 bg-black">
-    <nav class="flex justify-center py-5">
-      <ul class="nav-ul font-mono hidden sm:block">
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#nowww">Nowww</a></li>
-        <li><a href="#happyhere">Happy Here</a></li>
-        <li><a href="#wordpress">Wordpress</a></li>
-        <li><a href="#qa">Q+A</a></li>
-        <li><a href="#connect">Connect</a></li>
-      </ul>
+    <nav>
+      <div class="sm:flex sm:justify-center sm:py-5">
+        <ul class="hidden sm:block nav-ul font-mono ">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#nowww">Nowww</a></li>
+          <li><a href="#happyhere">Happy Here</a></li>
+          <li><a href="#wordpress">Wordpress</a></li>
+          <li><a href="#qa">Q+A</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+        <div class="nav-container sm:hidden">
+          <input class="checkbox" type="checkbox"/>
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="logo">
+            <h1>Anthony Ngo</h1>
+          </div>
+          <div class="menu-items">
+            <ul>
+              <li><a href="#overview">Overview</a></li>
+              <li><a href="#nowww">Nowww</a></li>
+              <li><a href="#happyhere">Happy Here</a></li>
+              <li><a href="#wordpress">Wordpress</a></li>
+              <li><a href="#qa">Q+A</a></li>
+              <li><a href="#connect">Connect</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
-  <main>
-    <section id="overview" class="h-screen flex justify-center items-center">
-      <div class="w-8/12 -mt-20">
-        <p class="text-2xl sm:text-5xl font-bold">Anthony is a software engineer based in Los Angeles, California. He
+  <main class="px-[5vw]">
+    <section id="overview" class="h-[70vh] xl:h-screen flex justify-center items-center">
+      <div class="md:w-10/12 lg:w-8/12 -mt-20">
+        <p class="hero-text font-bold">Anthony is a software engineer based in Los Angeles, California. He
           utilizes technology to produce solutions for
           organizations, individuals, and businesses of all shapes and sizes</p>
         <div class="mt-10">
-          <span>GH Icon</span>
-          <span>Linkedin Icon</span>
+          <a class="mr-10" href="https://github.com/AnthonyVNgo" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/anthony-ngo-480564114/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>LinkedIn
+          </a>
         </div>
       </div>
     </section>
 
-
-    <section id="nowww" class="h-screen grid grid-cols-3 gap-1">
+    <!-- Nowww App Section  -->
+    <section id="nowww" class="h-fit py-5 grid grid-cols-1 gap-10 md:grid-cols-2 xl:h-[75vh] 2xl:h-screen xl:grid-cols-3">
       <div class="col-span-1 flex justify-center items-center">
-        <div class="pl-32">
-          <h1 class="text-5xl font-bold">Nowww</h1>
+        <div>
+          <img class="md:hidden mb-5" src="https://i.imgur.com/H2UPMIv.png" alt="">
+          <h1 class="heading-text font-bold">Nowww</h1>
           <h2 class="my-3 text-sm font-mono">Built with PostgreSQL, Express, React, Node, &#38; Bootstrap</h2>
           <p>
             A full stack JavaScript application for professionals who want to share brief written descriptions of their current
@@ -49,107 +78,107 @@
           <a class="a-button" target="_blank" href="https://nowww-app.herokuapp.com/#sign-in">View the Nowww App</a>
         </div>
       </div>
-      <div class="col-span-2 flex justify-center items-center">
-        <div class="w-9/12 bg-red-50 h-5/6">
-        </div>
+      <div class="hidden justify-center items-center md:flex md:col-span-1 xl:col-span-2">
+        <img class="xl:h-[85%] 2xl:h-[80%]"
+          src="https://i.imgur.com/H2UPMIv.png"
+          alt="">
       </div>
     </section>
 
-
-    <section id="happyhere" class="h-screen grid grid-cols-3 gap-1">
-      <div class="col-span-2 flex justify-center items-center">
-        <div class="w-9/12 bg-red-50 h-5/6">
-        </div>
+    <!-- Happy Here Section  -->
+    <section id="happyhere" class="h-fit py-5 grid grid-cols-1 gap-10 md:grid-cols-2 xl:h-[75vh] 2xl:h-screen xl:grid-cols-3">
+      <div class="hidden justify-center items-center md:flex md:col-span-1 xl:col-span-2">
+        <img class="xl:h-[85%] 2xl:h-[80%]"
+          src="https://i.imgur.com/CAjAHvs.png"
+          alt="">
       </div>
-      <div class="col-span-1 flex items-center">
-        <div class="pr-32">
-          <h1 class="text-5xl font-bold">Happy Here</h1>
+      <div class="col-span-1 flex justify-center items-center">
+        <div>
+          <img class="md:hidden mb-5"
+            src="https://i.imgur.com/CAjAHvs.png"
+            alt="">
+          <h1 class="heading-text font-bold">Happy Here</h1>
           <h2 class="my-3 text-sm font-mono">Built with HTML, CSS, JavaScript, &#38; AJAX</h2>
           <p>
             A dynamic HTML, CSS, and JavaScript web application for professionals who want to relocate to urban areas
           </p>
-          <a class="a-button" target="_blank" href="https://anthonyvngo.github.io/Happy-Here/">View Happy Here</a>
+          <a class="a-button" target="_blank" href="https://nowww-app.herokuapp.com/#sign-in">View Happy Here</a>
         </div>
+      </div>
     </section>
 
-
-    <section id="wordpress" class="h-screen grid grid-cols-3 gap-1">
+    <!-- Wordpress Projects Section  -->
+    <section id="wordpress" class="h-fit py-5 grid grid-cols-1 gap-10 md:grid-cols-2 xl:h-[75vh] 2xl:h-screen xl:grid-cols-3">
       <div class="col-span-1 flex justify-center items-center">
-        <div class="pl-32">
-          <h1 class="text-5xl font-bold">Wordpress X Freelance</h1>
+        <div>
+          <img class="md:hidden mb-5"
+            src="https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+            alt="">
+          <h1 class="heading-text font-bold">Wordpress X Freelance</h1>
           <h2 class="my-3 text-sm font-mono">Built with Wordpress</h2>
           <p>
             Websites built with the popular Wordpress CMS
           </p>
-          <a class="a-button" target="_blank" href="https://blankstudiola.com/">View My Most Recent Wordpress Project</a>
+          <a class="a-button" target="_blank" href="https://blankstudiola.com/">View My Most Recent Project</a>
         </div>
       </div>
-      <div class="col-span-2 flex justify-center items-center">
-        <div class="w-9/12 bg-red-50 h-5/6">
-        </div>
+      <div class="hidden justify-center items-center md:flex md:col-span-1 xl:col-span-2">
+        <img class="xl:h-[85%] 2xl:h-[80%]"
+          src="https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
       </div>
     </section>
 
-
-    <section id="qa" class="h-screen flex items-center">
-      <div class="px-5 sm:px-32">
-        <h1 class="text-5xl font-bold">Q+A</h1>
+    <!-- Q and A Section  -->
+    <section id="qa" class="h-fit sm:h-screen flex items-center">
+      <div class="pt-[5vh]">
+        <h1 class="heading-text fontfont-bold">Q+A</h1>
         <p class="my-5 font-mono text-sm">Looking for answers? Here are some big picture questions and answers:</p>
-        <div class="grid grid-cols-1 sm:grid-cols-4 sm:gap-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-10 xl:grid-cols-4">
           <div class="col-span-1">
             <h6 class="font-bold mb-3">WHAT TOOLS AND TECHNOLOGIES DO YOU USE?</h6>
-            <p>I have a firm grasp on HTML, CSS, and JavaScript.
-              <br>
-              <br>
-              I'm also experienced with PostgreSQL, Express, React, and Node (PERN stack), along with tools such as Bootstrap, Tailwind CSS, Git, GitHub, npm, Webpack, Babel, DbDesigner VSCode, ESLint, Slack, Basecamp, Figma, Adobe Lightroom, Adobe Illustrator, and the list continues to grow.
+            <p class="leading-relaxed mb-14">
+              I have a firm grasp on HTML, CSS, and JavaScript. I'm also experienced with PostgreSQL, Express, React, and Node (PERN stack), along with tools such as Bootstrap, Tailwind CSS, Git, GitHub, npm, Webpack, Babel, DbDesigner VSCode, ESLint, Slack, Basecamp, Figma, Adobe Lightroom, Adobe Illustrator, and the list continues to grow.
             </p>
           </div>
           <div class="col-span-1">
             <h6 class="font-bold mb-3">WHY DID YOU BECOME A SOFTWARE ENGINEER?</h6>
-            <p>
+            <p class="leading-relaxed mb-14">
               Becoming a software engineer has allowed me to combine some of my favorite things. I get to express my creativity through working on the front-end, exercise my critical thinking and background in philosophy through developing code logic and solving algorithms, and in subtle ways contribute towards philanthropy by providing technical solutions to some of the world's problems.
             </p>
           </div>
           <div class="col-span-1">
             <h6 class="font-bold mb-3">WHERE DO YOU SEE YOURSELF IN THE NEXT FEW YEARS?</h6>
-            <p>
+            <p class="leading-relaxed mb-14">
               The future is unpredictable, but I wouldn't mind contributing towards the goals of a large company or working with a small team in a startup environment. I do plan to continue my education in the field and to utilize my skills to aid the less fortunate in some way shape or form. Feel free to connect with me if you have any interesting projects.
             </p>
           </div>
           <div class="col-span-1">
             <h6 class="font-bold mb-3">WHO ARE YOU OUTSIDE OF THIS TECH BUBBLE?</h6>
-            <p>When I'm not behind a screen coding, you can find me exploring the outdoors, rolling at a Brazilian Jiu Jitsu school, or dancing Salsa.</p>
+            <p class="leading-relaxed mb-14">When I'm not behind a screen coding, you can find me exploring the outdoors, rolling at a Brazilian Jiu Jitsu school, or dancing Salsa.</p>
           </div>
         </div>
       </div>
     </section>
 
-
-    <section id="connect" class="h-screen flex items-center">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-1">
-        <div class="col-span-1 flex justify-center">
-          <div class="w-9/12">
-            <button
-              class="text-2xl w-full p-7 mb-10 bg-transparent hover:bg-white font-semibold hover:text-black border border-white-500 hover:border-white transition ease-in-out ">
-              Anthonyvngo@info.com
-            </button>
-            <p>
-              The email address above is the quickest and easiest way to reach me.
-              <br><br>
-              You might find these other links useful. Feel free to connect with me on LinkedIn.
-              My blog also contains things about type, runnning, and photos. On github I try to update a few
-              repositories somewhat regularly.
+    <!-- Connect Section  -->
+    <section id="connect" class="h-fit pt-5 pb-14 sm:h-[50vh] md:h-[60vh] xl:h-screen flex">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div class="col-span-1 flex items-center pr-[5vw]">
+          <div class="h-fit">
+            <h1 class="heading-text font-bold mb-5">Let's Connect</h1>
+            <p class="mb-5">
+              Feel free to drop me a message or connect with me on LinkedIn. You could also check out some of my work on Github. I'm always open hearing about cool projects and look forward to collaborating with you.
             </p>
+            <a class="mr-10" href="https://github.com/AnthonyVNgo" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/anthony-ngo-480564114/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>LinkedIn
+            </a>
           </div>
         </div>
-        <div class="col-span-1 flex justify-center">
-          <div class="w-9/12">
-            <ul>
-              <li class="font-bold mb-3">SOCIAL</li>
-              <li>LinkedIn</li>
-              <li>GitHub</li>
-            </ul>
-          </div>
+        <div class="hidden col-span-1 sm:flex justify-center items-center">
+          <img class="max-h-[50vh] rounded-full " src="https://i.imgur.com/TB7PCLE.png" alt="">
         </div>
       </div>
     </section>
@@ -157,17 +186,6 @@
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-
-</body>
 </html>
+
+<!-- style bitten from https://demos.tyfromtheinternet.com/portfolio/ -->
