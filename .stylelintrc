@@ -1,11 +1,12 @@
 {
   "ignoreFiles": [
-    "**/*.{js,json}",
+    "**/*.{js,json,css}",
     "**node_modules/**"
   ],
   "extends": [
     "stylelint-config-recommended",
-    "stylelint-config-standard"
+    "stylelint-config-standard",
+    "stylelint-config-tailwindcss"
   ],
   "rules": {
     "alpha-value-notation": null,
