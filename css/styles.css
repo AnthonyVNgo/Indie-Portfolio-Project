@@ -1,15 +1,5 @@
-body {
-  background-color: black;
-  color: white;
-}
 
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
-.overflow-default {
-  overflow: auto;
-}
+/* Hero Section  */
 
 .hero-text {
   font-size: calc(16px + 2vw);
@@ -46,7 +36,14 @@ body {
   color: black;
 }
 
-/* MOBILE NAV BAR HAMBURGER  */
+/* Mobile Menu  */
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-default {
+  overflow: auto;
+}
 
 .nav-container {
   justify-content: space-between;
@@ -111,8 +108,9 @@ body {
   padding: 0.7rem;
 }
 
+/* Mobile Hamburger & Lines */
 #hamburger {
-    position: absolute;
+  position: absolute;
   display: block;
   height: 32px;
   width: 32px;
@@ -122,8 +120,6 @@ body {
   opacity: 0;
   cursor: pointer;
 }
-
-/* hamburger toggle lines  */
 
 .hamburger-lines {
   display: flex;
