@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/011024de61.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body" class="">
   <header class="sticky top-0 z-10 bg-black">
     <nav>
       <div class="sm:flex sm:justify-center sm:py-5">
@@ -24,23 +24,34 @@
           <li><a href="#connect">Connect</a></li>
         </ul>
         <div class="nav-container sm:hidden">
-          <input class="checkbox" type="checkbox"/>
+          <!-- <input class="checkbox" type="checkbox"/> -->
+          <button id="hamburger" type="button"></button>
           <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
+            <span id="line1" class="line line1"></span>
+            <span id="line2" class="line line2"></span>
+            <span id="line3" class="line line3"></span>
           </div>
           <div class="logo">
             <h1>Anthony Ngo</h1>
           </div>
           <div class="menu-items">
-            <ul>
+            <ul class="menu-item-ul">
               <li><a href="#overview">Overview</a></li>
               <li><a href="#nowww">Nowww</a></li>
               <li><a href="#happyhere">Happy Here</a></li>
               <li><a href="#wordpress">Wordpress</a></li>
               <li><a href="#qa">Q+A</a></li>
               <li><a href="#connect">Connect</a></li>
+              <li>
+                <a href="https://github.com/AnthonyVNgo" target="_blank">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/anthony-ngo-480564114/" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>LinkedIn
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -73,7 +84,8 @@
           <h2 class="my-3 text-sm font-mono">Built with PostgreSQL, Express, React, Node, &#38; Bootstrap</h2>
           <p>
             A full stack JavaScript application for professionals who want to share brief written descriptions of their current
-            projects (Nowwws)
+            projects (Nowwws). This project was inspired by Derek Siver's concept of a 'Now Page' and combines the user profile features from OurNows.com with
+            the card gallery aesthetic of ADPList.org. The app allows users to view a gallery of other users and perform CRUD operations through editing profile details along with adding and deleting Nowww entries.
           </p>
           <a class="a-button" target="_blank" href="https://nowww-app.herokuapp.com/#sign-in">View the Nowww App</a>
         </div>
@@ -100,9 +112,9 @@
           <h1 class="heading-text font-bold">Happy Here</h1>
           <h2 class="my-3 text-sm font-mono">Built with HTML, CSS, JavaScript, &#38; AJAX</h2>
           <p>
-            A dynamic HTML, CSS, and JavaScript web application for professionals who want to relocate to urban areas
+            A dynamic HTML, CSS, and JavaScript web application for professionals who want to relocate to urban areas. This project was inspired by my 2 years living abroad, itch for travel, and plan for relocating as I break into tech. The web app includes features that allow users to search for quality of life scores for urban areas and store or remove cities from a favorited or skipped list.
           </p>
-          <a class="a-button" target="_blank" href="https://nowww-app.herokuapp.com/#sign-in">View Happy Here</a>
+          <a class="a-button" target="_blank" href="https://anthonyvngo.github.io/Happy-Here/">View Happy Here</a>
         </div>
       </div>
     </section>
@@ -117,7 +129,7 @@
           <h1 class="heading-text font-bold">Wordpress X Freelance</h1>
           <h2 class="my-3 text-sm font-mono">Built with Wordpress</h2>
           <p>
-            Websites built with the popular Wordpress CMS
+            Wordpress is what introduced me into web development and software engineering. After working on a couple of small projects, I quickly realized that there was a gap between the ideas of what I wanted to build and my skillset. With that being said, I was still able to work on some cool projects and here's one of them.
           </p>
           <a class="a-button" target="_blank" href="https://blankstudiola.com/">View My Most Recent Project</a>
         </div>
