@@ -15,24 +15,25 @@
   <header class="sticky top-0 z-10 bg-black">
     <nav>
       <div class="sm:flex sm:justify-center sm:py-5">
-        <ul class="hidden sm:block nav-ul font-mono ">
+        <!-- <ul class="hidden sm:block nav-ul font-mono ">
           <li><a href="#overview">Overview</a></li>
           <li><a href="#nowww">Nowww</a></li>
           <li><a href="#happyhere">Happy Here</a></li>
           <li><a href="#wordpress">Wordpress</a></li>
           <li><a href="#qa">Q+A</a></li>
           <li><a href="#connect">Connect</a></li>
-        </ul>
+        </ul> -->
         <div class="nav-container sm:hidden">
           <input class="checkbox" type="checkbox"/>
+          <button id="hamburger" type="button">BUTTON</button>
           <div class="hamburger-lines">
             <span class="line line1"></span>
             <span class="line line2"></span>
             <span class="line line3"></span>
           </div>
-          <div class="logo">
+          <!-- <div class="logo">
             <h1>Anthony Ngo</h1>
-          </div>
+          </div> -->
           <div class="menu-items">
             <ul>
               <li><a href="#overview">Overview</a></li>
@@ -48,7 +49,7 @@
     </nav>
   </header>
   <main class="px-[5vw]">
-    <section id="overview" class="h-[70vh] xl:h-screen flex justify-center items-center">
+    <!-- <section id="overview" class="h-[70vh] xl:h-screen flex justify-center items-center">
       <div class="md:w-10/12 lg:w-8/12 -mt-20">
         <p class="hero-text font-bold">Anthony is a software engineer based in Los Angeles, California. He
           utilizes technology to produce solutions for
@@ -62,10 +63,10 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Nowww App Section  -->
-    <section id="nowww" class="h-fit py-5 grid grid-cols-1 gap-10 md:grid-cols-2 xl:h-[75vh] 2xl:h-screen xl:grid-cols-3">
+    <!-- <section id="nowww" class="h-fit py-5 grid grid-cols-1 gap-10 md:grid-cols-2 xl:h-[75vh] 2xl:h-screen xl:grid-cols-3">
       <div class="col-span-1 flex justify-center items-center">
         <div>
           <img class="md:hidden mb-5" src="https://i.imgur.com/H2UPMIv.png" alt="">
@@ -73,7 +74,8 @@
           <h2 class="my-3 text-sm font-mono">Built with PostgreSQL, Express, React, Node, &#38; Bootstrap</h2>
           <p>
             A full stack JavaScript application for professionals who want to share brief written descriptions of their current
-            projects (Nowwws)
+            projects (Nowwws). This project was inspired by Derek Siver's concept of a 'Now Page' and combines the user profile features from OurNows.com with
+            the card gallery aesthetic of ADPList.org. The app allows users to view a gallery of other users and perform CRUD operations through editing profile details along with adding and deleting Nowww entries.
           </p>
           <a class="a-button" target="_blank" href="https://nowww-app.herokuapp.com/#sign-in">View the Nowww App</a>
         </div>
@@ -83,10 +85,10 @@
           src="https://i.imgur.com/H2UPMIv.png"
           alt="">
       </div>
-    </section>
+    </section> -->
 
     <!-- Happy Here Section  -->
-    <section id="happyhere" class="h-fit py-5 grid grid-cols-1 gap-10 md:grid-cols-2 xl:h-[75vh] 2xl:h-screen xl:grid-cols-3">
+    <!-- <section id="happyhere" class="h-fit py-5 grid grid-cols-1 gap-10 md:grid-cols-2 xl:h-[75vh] 2xl:h-screen xl:grid-cols-3">
       <div class="hidden justify-center items-center md:flex md:col-span-1 xl:col-span-2">
         <img class="xl:h-[85%] 2xl:h-[80%]"
           src="https://i.imgur.com/CAjAHvs.png"
@@ -100,15 +102,15 @@
           <h1 class="heading-text font-bold">Happy Here</h1>
           <h2 class="my-3 text-sm font-mono">Built with HTML, CSS, JavaScript, &#38; AJAX</h2>
           <p>
-            A dynamic HTML, CSS, and JavaScript web application for professionals who want to relocate to urban areas
+            A dynamic HTML, CSS, and JavaScript web application for professionals who want to relocate to urban areas. This project was inspired by my 2 years living abroad, itch for travel, and plan for relocating as I break into tech. The web app includes features that allow users to search for quality of life scores for urban areas and store or remove cities from a favorited or skipped list.
           </p>
-          <a class="a-button" target="_blank" href="https://nowww-app.herokuapp.com/#sign-in">View Happy Here</a>
+          <a class="a-button" target="_blank" href="https://anthonyvngo.github.io/Happy-Here/">View Happy Here</a>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Wordpress Projects Section  -->
-    <section id="wordpress" class="h-fit py-5 grid grid-cols-1 gap-10 md:grid-cols-2 xl:h-[75vh] 2xl:h-screen xl:grid-cols-3">
+    <!-- <section id="wordpress" class="h-fit py-5 grid grid-cols-1 gap-10 md:grid-cols-2 xl:h-[75vh] 2xl:h-screen xl:grid-cols-3">
       <div class="col-span-1 flex justify-center items-center">
         <div>
           <img class="md:hidden mb-5"
@@ -117,7 +119,7 @@
           <h1 class="heading-text font-bold">Wordpress X Freelance</h1>
           <h2 class="my-3 text-sm font-mono">Built with Wordpress</h2>
           <p>
-            Websites built with the popular Wordpress CMS
+            Wordpress is what introduced me into web development and software engineering. After working on a couple of small projects, I quickly realized that there was a gap between the ideas of what I wanted to build and my skillset. With that being said, I was still able to work on some cool projects and here's one of them.
           </p>
           <a class="a-button" target="_blank" href="https://blankstudiola.com/">View My Most Recent Project</a>
         </div>
@@ -126,10 +128,10 @@
         <img class="xl:h-[85%] 2xl:h-[80%]"
           src="https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
       </div>
-    </section>
+    </section> -->
 
     <!-- Q and A Section  -->
-    <section id="qa" class="h-fit sm:h-screen flex items-center">
+    <!-- <section id="qa" class="h-fit sm:h-screen flex items-center">
       <div class="pt-[5vh]">
         <h1 class="heading-text fontfont-bold">Q+A</h1>
         <p class="my-5 font-mono text-sm">Looking for answers? Here are some big picture questions and answers:</p>
@@ -158,10 +160,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Connect Section  -->
-    <section id="connect" class="h-fit pt-5 pb-14 sm:h-[50vh] md:h-[60vh] xl:h-screen flex">
+    <!-- <section id="connect" class="h-fit pt-5 pb-14 sm:h-[50vh] md:h-[60vh] xl:h-screen flex">
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
         <div class="col-span-1 flex items-center pr-[5vw]">
           <div class="h-fit">
@@ -181,7 +183,7 @@
           <img class="max-h-[50vh] rounded-full " src="https://i.imgur.com/TB7PCLE.png" alt="">
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
