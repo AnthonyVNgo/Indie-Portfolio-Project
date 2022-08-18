@@ -1,10 +1,11 @@
 const toggleButton = document.querySelector('#hamburger');
-const logo = document.querySelector('.logo');
-const menuItems = document.querySelector('.menu-items');
-const menuItemUL = document.querySelector('.menu-item-ul');
 const line1 = document.querySelector('#line1');
 const line2 = document.querySelector('#line2');
 const line3 = document.querySelector('#line3');
+const logo = document.querySelector('.logo');
+const menuItems = document.querySelector('.menu-items');
+const menuItemUL = document.querySelector('.menu-item-ul');
+const bodyElement = document.querySelector('#body');
 
 let clicked = false;
 
@@ -36,16 +37,26 @@ const linesUnclicked = () => {
   line3.className = 'line line3';
 };
 
+const overflowYHidden = () => {
+  bodyElement.className = 'overflow-y-hidden';
+};
+
+const overFlowAuto = () => {
+  bodyElement.className = 'overflow-auto';
+};
+
 const toggleClicked = () => {
   hideLogo();
   showMenuItems();
   linesClicked();
+  overflowYHidden();
 };
 
 const toggleUnclicked = () => {
   showLogo();
   hideMenuItems();
   linesUnclicked();
+  overFlowAuto();
 };
 
 const toggleClickEventHandler = () => {
@@ -67,3 +78,11 @@ const menuItemClicked = () => {
 };
 
 menuItemUL.addEventListener('click', menuItemClicked);
+
+const handleResize = () => {
+  if (screen.width > 630) {
+    toggleUnclicked();
+  }
+};
+
+document.addEventListener('resize', handleResize);

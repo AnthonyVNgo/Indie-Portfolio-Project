@@ -3,6 +3,14 @@ body {
   color: white;
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-default {
+  overflow: auto;
+}
+
 .hero-text {
   font-size: calc(16px + 2vw);
   line-height: 1.1;
@@ -99,7 +107,7 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   padding: 0.7rem;
 }
 
