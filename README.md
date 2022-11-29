@@ -1,5 +1,5 @@
 # Indie-Portfolio-Project
-A static protfolio website built with HTML, CSS, and JavaScript for me to showcase some of my past works and for users to view and connect with me.
+A static protfolio website built with HTML, CSS, TailwindCSS, and JavaScript for me to showcase some of my past works and for users to view and connect with me.
 <br><br>
 ## Why I Built This
 I wanted to work on a completely independent project while also learning how to incorporate Tailwind css, so I decided to kill two birds with one stone with this project.
